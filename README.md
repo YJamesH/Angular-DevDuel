@@ -1,10 +1,26 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13242403&assignment_repo_type=AssignmentRepo)
 # Angular Dev-Duel
 ---
-In this project, we focsed on developing a small full-stack application that interfaces with [GitHub's API](https://developer.github.com/v3/) in order to aggregate, transform, and display a given user's profile and repository data. The web application was implmented to communicate with a provided supporting API to get the following data for a given user's GitHub profile. The backend is implmented as a Node API using Express that will call GitHub's API to fetch data necessary to derive/display the data specified. The user will see a home page where they can choose between two options: **inspect** or **duel**.
+In this project, we focused on developing a small full-stack application that interfaces with [GitHub's API](https://developer.github.com/v3/) in order to aggregate, transform, and display a given user's profile and repository data. The web application was implemented to communicate with a provided supporting API to get the following data for a given user's GitHub profile. The backend is implmented as a Node API using Express that will call GitHub's API to fetch data necessary to derive/display the data specified. The user will see a home page where they can choose between two options: **inspect** or **duel**.
 
 ### Inspect
 On the **inspect** page, a client will enter a username, submit, and be displayed the user's `profile` data.
+User data will consist of
+```
+Username,
+Name,
+Location,
+GitHub Biography,
+Avatar URL,
+GitHub Titles,
+Favorite Languages used,
+List of Public Repositories,
+Total Profile Stars,
+Highest Starred Repository,
+# of Perfect Repositories,
+# of Followers,
+# of Following
+```
 
 ### Duel
 For the **duel** page, two usernames are entered and their `profile` datas are displayed. Using the fields that are received from the API and displayed to the user, the winner will be determined based on total stars divided by # of public repos, and the winner will be displayed in green.
